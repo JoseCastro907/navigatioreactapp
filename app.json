@@ -1,0 +1,12 @@
+{
+  "name": "navigatioreactapp",
+  "displayName": "navigatioreactapp",
+  "expo": {
+    "name": "navigatioreactapp",
+    "slug": "navigatioreactapp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
