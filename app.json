@@ -2,11 +2,23 @@
   "name": "navigatioreactapp",
   "displayName": "navigatioreactapp",
   "expo": {
-    "name": "navigatioreactapp",
-    "slug": "navigatioreactapp",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "name": "Movies",
+    "slug": "Movies",
+	"version": "1.0.0",
+	
+    "platforms": [
+			"android",
+			"ios"
+		],
+		"ios": {
+			"bundleIdentifier": "cr.ac.ucr.movies",
+			"buildNumber": "1.0.0"
+		},
+		"android": {
+			"package": "cr.ac.ucr.movies",
+			"versionCode": 1
+		},
+		"description": "",
+		"githubUrl": "https://github.com/JoseCastro907/navigatioreactapp"
   }
 }

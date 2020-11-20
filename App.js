@@ -1,21 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
+  
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StatusBar } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import Router from './Router';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import LoadAssets from './src/Utils/loadAssets';
+
+import { fonts } from './src/Utils/fonts';
+
+const assets = [];
+
+const App = () => {
+	return (
+		<LoadAssets fonts={fonts} assets={assets}>
+			<View style={{ flex: 1 }}>
+				<StatusBar barStyle={'light-content'}></StatusBar>
+				<Router></Router>
+			</View>
+		</LoadAssets>
+	);
+};
+
+export default App;
